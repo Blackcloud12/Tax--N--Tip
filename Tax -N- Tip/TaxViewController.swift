@@ -22,6 +22,9 @@ class TaxViewController: UIViewController, UIPickerViewDelegate {
         
     }
     
+    @IBAction func taxCalculateClicked() {
+        print("Tax Button clicked")
+    }
     
     
     

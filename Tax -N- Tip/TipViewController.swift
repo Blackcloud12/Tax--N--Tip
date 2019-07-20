@@ -23,5 +23,7 @@ class TipViewController: UIViewController {
     
     }
 
-    
+    @IBAction func tipCalculateClicked() {
+        print("Tip button clicked")
+    }
 }
