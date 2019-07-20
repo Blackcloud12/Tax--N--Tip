@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gsI-Eh-vYK">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="IO6-jN-Rm4">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="gsI-Eh-vYK" customClass="PageViewController" customModule="Tax__N__Tip" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" id="x0n-Xt-Ax9"/>
+                    </connections>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wTb-so-GbF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-713" y="129"/>
+        </scene>
+        <!--Tax View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TaxViewController" customModule="Tax__N__Tip" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="QQA-FQ-ef3">
+                                <rect key="frame" x="104.66666666666669" y="710" width="166" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="9ac-yK-xOD"/>
+                                    <constraint firstAttribute="width" constant="166" id="U7S-DA-XOg"/>
+                                </constraints>
+                            </pageControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sales Tax" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H09-1p-VU6">
+                                <rect key="frame" x="38" y="83" width="294" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="31"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.18510456859999999" green="0.061825050020000001" blue="0.61045673079999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="-1" height="-1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subtotal:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fI2-Tb-Gau">
+                                <rect key="frame" x="38" y="175" width="79" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.18510456859999999" green="0.061825050020000001" blue="0.61045673079999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="-2" height="-2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sales Tax:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZ8-bY-lNb">
+                                <rect key="frame" x="58" y="487" width="89" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.18510456859999999" green="0.061825050020000001" blue="0.61045673079999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="-2" height="-2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price Total: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIZ-LE-5eh">
+                                <rect key="frame" x="58" y="541" width="104" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.18510456859999999" green="0.061825050020000001" blue="0.61045673079999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="-2" height="-2"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$100.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cVF-Xx-gDq">
+                                <rect key="frame" x="165" y="170" width="140" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$ 8.23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WV9-Wb-dVy">
+                                <rect key="frame" x="229" y="487" width="53" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.18510456859999999" green="0.061825050020000001" blue="0.61045673079999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="-2" height="-2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$108.23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptZ-Pm-SRg">
+                                <rect key="frame" x="220" y="541" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.18510456859999999" green="0.061825050020000001" blue="0.61045673079999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="-2" height="-2"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zwg-rw-zyF">
+                                <rect key="frame" x="38" y="254" width="294" height="169"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JvT-JZ-pf2">
+                                <rect key="frame" x="38" y="602" width="294" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.18510456859999999" green="0.061825050020000001" blue="0.61045673079999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <size key="titleShadowOffset" width="-2" height="-2"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QQA-FQ-ef3" secondAttribute="bottom" constant="31" id="ts1-g5-Zib"/>
+                            <constraint firstItem="QQA-FQ-ef3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z3x-IJ-C8I"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="priceTotalLabel" destination="ptZ-Pm-SRg" id="O7f-ZD-aG5"/>
+                        <outlet property="salesTaxButton" destination="JvT-JZ-pf2" id="odN-Ra-M4i"/>
+                        <outlet property="salesTaxLabel" destination="WV9-Wb-dVy" id="c4K-jZ-9lI"/>
+                        <outlet property="subtotalTextField" destination="cVF-Xx-gDq" id="GOH-et-mKj"/>
+                        <outlet property="taxPageControl" destination="QQA-FQ-ef3" id="NXO-TY-tPD"/>
+                        <outlet property="taxRatePickerView" destination="Zwg-rw-zyF" id="pFB-4I-Uky"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.40000000000001" y="128.57142857142858"/>
+        </scene>
+        <!--Tip View Controller-->
+        <scene sceneID="mGO-Gp-7sG">
+            <objects>
+                <viewController id="1SO-tx-mbS" customClass="TipViewController" customModule="Tax__N__Tip" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2jF-B6-91S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sales Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPM-uq-GP3">
+                                <rect key="frame" x="38" y="83" width="294" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="6fb-oD-b6k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="31"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.036450046149999998" green="0.67451316120000004" blue="0.1004440829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="-1" height="-1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Alj-95-kx3">
+                                <rect key="frame" x="38" y="602" width="294" height="59"/>
+                                <color key="backgroundColor" red="0.036450046151674194" green="0.67451316118240356" blue="0.10044408293340522" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <size key="titleShadowOffset" width="-2" height="-2"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="o12-xB-sSd">
+                                <rect key="frame" x="105" y="710" width="166" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="6u1-AA-8zk"/>
+                                </constraints>
+                            </pageControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Subtotal:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYE-rZ-giP">
+                                <rect key="frame" x="45" y="177" width="79" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="lRZ-GR-91s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.036450046149999998" green="0.67451316120000004" blue="0.1004440829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="-2" height="-2"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$100.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YWb-bs-kwz">
+                                <rect key="frame" x="172" y="172" width="140" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tax rate:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trK-zS-mg7">
+                                <rect key="frame" x="45" y="239" width="76" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="aRT-Q3-bb1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.036450046149999998" green="0.67451316120000004" blue="0.1004440829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="-2" height="-2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="15 %" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0x-jk-Z9C">
+                                <rect key="frame" x="182" y="239" width="116" height="64"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="26"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.036450046149999998" green="0.67451316120000004" blue="0.1004440829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="-2" height="-2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sales Tip:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUq-k1-D7o">
+                                <rect key="frame" x="74" y="453" width="86" height="21"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.036450046149999998" green="0.67451316120000004" blue="0.1004440829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="-2" height="-2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Price Total: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAg-8M-OQ7">
+                                <rect key="frame" x="74" y="507" width="104" height="21"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.036450046149999998" green="0.67451316120000004" blue="0.1004440829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="-2" height="-2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$ 8.23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3V-2J-48b">
+                                <rect key="frame" x="245" y="453" width="53" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53" id="LiV-Yd-uWy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.036450046149999998" green="0.67451316120000004" blue="0.1004440829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="-2" height="-2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$108.23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYu-wt-R0C">
+                                <rect key="frame" x="236" y="507" width="70" height="21"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.036450046149999998" green="0.67451316120000004" blue="0.1004440829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="-2" height="-2"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="1" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="e7j-Je-dsY">
+                                <rect key="frame" x="72" y="332" width="234" height="30"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fN2-U6-q2F">
+                                <rect key="frame" x="16" y="336" width="50" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="cug-ra-dRr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.036450046149999998" green="0.67451316120000004" blue="0.1004440829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="-2" height="-2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="30%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mvv-ML-Hjv">
+                                <rect key="frame" x="309" y="334" width="50" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="q0V-pa-F9X"/>
+                                    <constraint firstAttribute="width" constant="50" id="tux-IZ-8YQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.036450046149999998" green="0.67451316120000004" blue="0.1004440829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="-2" height="-2"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TPM-uq-GP3" firstAttribute="top" secondItem="evS-1G-lru" secondAttribute="top" constant="39" id="0Kf-I9-Jmp"/>
+                            <constraint firstItem="Alj-95-kx3" firstAttribute="top" secondItem="bAg-8M-OQ7" secondAttribute="bottom" constant="74" id="1tD-eY-wDv"/>
+                            <constraint firstItem="TPM-uq-GP3" firstAttribute="leading" secondItem="evS-1G-lru" secondAttribute="leading" constant="38" id="4QP-7N-awl"/>
+                            <constraint firstItem="YWb-bs-kwz" firstAttribute="top" secondItem="TPM-uq-GP3" secondAttribute="bottom" constant="48" id="58g-yn-Jff"/>
+                            <constraint firstItem="o0x-jk-Z9C" firstAttribute="leading" secondItem="trK-zS-mg7" secondAttribute="trailing" constant="61" id="6kI-r1-V8r"/>
+                            <constraint firstItem="oUq-k1-D7o" firstAttribute="leading" secondItem="bAg-8M-OQ7" secondAttribute="leading" id="CkB-Pd-NaB"/>
+                            <constraint firstItem="trK-zS-mg7" firstAttribute="top" secondItem="NYE-rZ-giP" secondAttribute="bottom" constant="41" id="CmY-Ho-cSO"/>
+                            <constraint firstItem="evS-1G-lru" firstAttribute="trailing" secondItem="TPM-uq-GP3" secondAttribute="trailing" constant="43" id="GZT-pG-NAq"/>
+                            <constraint firstItem="TPM-uq-GP3" firstAttribute="trailing" secondItem="Alj-95-kx3" secondAttribute="trailing" id="HNq-2c-xPT"/>
+                            <constraint firstItem="trK-zS-mg7" firstAttribute="top" secondItem="o0x-jk-Z9C" secondAttribute="top" id="NVL-U4-6ZM"/>
+                            <constraint firstItem="e7j-Je-dsY" firstAttribute="leading" secondItem="oUq-k1-D7o" secondAttribute="leading" id="OMf-mi-V9T"/>
+                            <constraint firstItem="oUq-k1-D7o" firstAttribute="leading" secondItem="evS-1G-lru" secondAttribute="leading" constant="74" id="Ozg-MK-4sW"/>
+                            <constraint firstItem="fN2-U6-q2F" firstAttribute="top" secondItem="trK-zS-mg7" secondAttribute="bottom" constant="76" id="QE2-Ob-hoY"/>
+                            <constraint firstItem="evS-1G-lru" firstAttribute="trailing" secondItem="lYu-wt-R0C" secondAttribute="trailing" constant="69" id="QkB-De-KXf"/>
+                            <constraint firstItem="fN2-U6-q2F" firstAttribute="leading" secondItem="2jF-B6-91S" secondAttribute="leadingMargin" id="R7h-qa-HA7"/>
+                            <constraint firstItem="e7j-Je-dsY" firstAttribute="leading" secondItem="fN2-U6-q2F" secondAttribute="trailing" constant="8" symbolic="YES" id="U05-11-t56"/>
+                            <constraint firstItem="NYE-rZ-giP" firstAttribute="leading" secondItem="evS-1G-lru" secondAttribute="leading" constant="45" id="W1e-75-yYe"/>
+                            <constraint firstItem="o12-xB-sSd" firstAttribute="top" secondItem="Alj-95-kx3" secondAttribute="bottom" constant="49" id="WNi-de-ldX"/>
+                            <constraint firstItem="TPM-uq-GP3" firstAttribute="leading" secondItem="Alj-95-kx3" secondAttribute="leading" id="X66-73-f2p"/>
+                            <constraint firstItem="Mvv-ML-Hjv" firstAttribute="leading" secondItem="e7j-Je-dsY" secondAttribute="trailing" constant="5" id="ZFQ-ST-VAr"/>
+                            <constraint firstItem="evS-1G-lru" firstAttribute="bottom" secondItem="o12-xB-sSd" secondAttribute="bottom" constant="31" id="Zvt-5x-axp"/>
+                            <constraint firstItem="evS-1G-lru" firstAttribute="trailing" secondItem="o0x-jk-Z9C" secondAttribute="trailing" constant="77" id="ZwI-b7-zoQ"/>
+                            <constraint firstItem="o12-xB-sSd" firstAttribute="leading" secondItem="evS-1G-lru" secondAttribute="leading" constant="105" id="Zxa-Mr-8rj"/>
+                            <constraint firstItem="fN2-U6-q2F" firstAttribute="bottom" secondItem="e7j-Je-dsY" secondAttribute="bottom" id="bFl-Ca-SLj"/>
+                            <constraint firstItem="NYE-rZ-giP" firstAttribute="centerY" secondItem="YWb-bs-kwz" secondAttribute="centerY" id="ddY-YC-cMl"/>
+                            <constraint firstItem="oUq-k1-D7o" firstAttribute="baseline" secondItem="a3V-2J-48b" secondAttribute="baseline" id="gB7-yJ-KFA"/>
+                            <constraint firstItem="o0x-jk-Z9C" firstAttribute="top" secondItem="YWb-bs-kwz" secondAttribute="bottom" constant="37" id="gum-IS-BCa"/>
+                            <constraint firstItem="e7j-Je-dsY" firstAttribute="top" secondItem="trK-zS-mg7" secondAttribute="bottom" constant="72" id="gvP-4Y-p7N"/>
+                            <constraint firstItem="bAg-8M-OQ7" firstAttribute="baseline" secondItem="lYu-wt-R0C" secondAttribute="baseline" id="i4h-ox-3FW"/>
+                            <constraint firstItem="bAg-8M-OQ7" firstAttribute="top" secondItem="oUq-k1-D7o" secondAttribute="bottom" constant="33" id="jyh-XX-qCt"/>
+                            <constraint firstItem="NYE-rZ-giP" firstAttribute="leading" secondItem="trK-zS-mg7" secondAttribute="leading" id="lEI-ou-UYx"/>
+                            <constraint firstItem="evS-1G-lru" firstAttribute="trailing" secondItem="YWb-bs-kwz" secondAttribute="trailing" constant="63" id="mBq-xY-UiO"/>
+                            <constraint firstItem="o0x-jk-Z9C" firstAttribute="trailing" secondItem="a3V-2J-48b" secondAttribute="trailing" id="oWP-mw-LUY"/>
+                            <constraint firstItem="e7j-Je-dsY" firstAttribute="centerY" secondItem="Mvv-ML-Hjv" secondAttribute="centerY" id="sGz-wV-2cl"/>
+                            <constraint firstItem="o12-xB-sSd" firstAttribute="centerX" secondItem="2jF-B6-91S" secondAttribute="centerX" id="szg-B3-Rv9"/>
+                            <constraint firstItem="YWb-bs-kwz" firstAttribute="leading" secondItem="NYE-rZ-giP" secondAttribute="trailing" constant="48" id="uB1-X7-VZO"/>
+                            <constraint firstItem="lYu-wt-R0C" firstAttribute="leading" secondItem="bAg-8M-OQ7" secondAttribute="trailing" constant="58" id="ulJ-A4-bmJ"/>
+                            <constraint firstItem="oUq-k1-D7o" firstAttribute="top" secondItem="e7j-Je-dsY" secondAttribute="bottom" constant="92" id="wG8-7j-oFV"/>
+                            <constraint firstItem="a3V-2J-48b" firstAttribute="centerX" secondItem="lYu-wt-R0C" secondAttribute="centerX" id="wUQ-Py-Le4"/>
+                            <constraint firstItem="Mvv-ML-Hjv" firstAttribute="trailing" secondItem="2jF-B6-91S" secondAttribute="trailingMargin" id="yk9-CK-p56"/>
+                            <constraint firstItem="e7j-Je-dsY" firstAttribute="top" secondItem="o0x-jk-Z9C" secondAttribute="bottom" constant="29" id="zjP-sw-jty"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="evS-1G-lru"/>
+                    </view>
+                    <connections>
+                        <outlet property="tipButton" destination="Alj-95-kx3" id="e6P-VF-GpK"/>
+                        <outlet property="tipPageControl" destination="o12-xB-sSd" id="ADV-F5-Vo5"/>
+                        <outlet property="tipPriceTotalLabel" destination="lYu-wt-R0C" id="dka-vz-YCs"/>
+                        <outlet property="tipRateLabel" destination="a3V-2J-48b" id="7zp-bh-uD9"/>
+                        <outlet property="tipRateSlider" destination="e7j-Je-dsY" id="42V-sH-VLa"/>
+                        <outlet property="tipRateSliderValueLabel" destination="o0x-jk-Z9C" id="8Wc-1T-eKJ"/>
+                        <outlet property="tipTextField" destination="YWb-bs-kwz" id="mCi-9N-tCR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FiV-HU-gij" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1015" y="129"/>
+        </scene>
+    </scenes>
+</document>
