@@ -26,4 +26,8 @@ class TipViewController: UIViewController {
     @IBAction func tipCalculateClicked() {
         print("Tip button clicked")
     }
+    
+    @IBAction func displaySliderValue() {
+        tipRateSliderValueLabel.text! = "\(Int(tipRateSlider.value))%"
+    }
 }
