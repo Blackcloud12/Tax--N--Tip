@@ -8,7 +8,18 @@
 
 import UIKit
 
-class TaxViewController: UIViewController, UIPickerViewDelegate {
+class TaxViewController: UIViewController, UIPickerViewDelegate/*, UIPickerViewDataSource*/ {
+    
+//    let taxRange = 0.001...10.00
+//
+//    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+//        return taxRange
+//    }
+//
+//    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+//        <#code#>
+//    }
+    
     
     @IBOutlet weak var subtotalTextField: UITextField!
     @IBOutlet weak var taxRatePickerView: UIPickerView!
@@ -25,6 +36,7 @@ class TaxViewController: UIViewController, UIPickerViewDelegate {
     @IBAction func taxCalculateClicked() {
         print("Tax Button clicked")
     }
+    
     
     
     

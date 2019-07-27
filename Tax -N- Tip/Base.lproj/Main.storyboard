@@ -294,6 +294,13 @@
                                 <color key="highlightedColor" red="0.036450046149999998" green="0.67451316120000004" blue="0.1004440829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="shadowOffset" width="-2" height="-2"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Invalid Input!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RnP-lr-sWV">
+                                <rect key="frame" x="172" y="143" width="140" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN-Bold" family="Kannada Sangam MN" pointSize="17"/>
+                                <color key="textColor" red="0.97687381510000004" green="0.27697695109999998" blue="0.26901013800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
@@ -341,6 +348,7 @@
                         <viewLayoutGuide key="safeArea" id="evS-1G-lru"/>
                     </view>
                     <connections>
+                        <outlet property="errorLabel" destination="RnP-lr-sWV" id="PnY-jL-mqx"/>
                         <outlet property="tipButton" destination="Alj-95-kx3" id="e6P-VF-GpK"/>
                         <outlet property="tipPageControl" destination="o12-xB-sSd" id="ADV-F5-Vo5"/>
                         <outlet property="tipPriceTotalLabel" destination="lYu-wt-R0C" id="dka-vz-YCs"/>
@@ -352,7 +360,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FiV-HU-gij" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1015" y="129"/>
+            <point key="canvasLocation" x="1013.6" y="128.57142857142858"/>
         </scene>
     </scenes>
 </document>
